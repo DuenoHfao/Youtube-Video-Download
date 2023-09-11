@@ -1,5 +1,6 @@
 from pytube import YouTube
 from moviepy.editor import *
+import ctypes
 import os
 
 def rename(dest, video_title, previous_format, new_format):
@@ -9,13 +10,15 @@ def rename(dest, video_title, previous_format, new_format):
     return [old_path, new_path]
 
 destination = "C:/Users/DuenoHfao/Desktop/Programming/Download Audio/Downloaded/"
-video_link = "https://youtu.be/MgNCjYXCxOc?list=LRSREwUjOBueyvAnC-DAYhzVvHTeW9ADf_VEx"
+video_link = "https://youtu.be/A48bcNyi1VM?list=LRSREwUjOBueyvAnC-DAYhzVvHTeW9ADf_VEx"
 temp_dest = "C:/Users/DuenoHfao/Desktop/Programming/Download Audio/Temp/"
 
 if os.path.exists(temp_dest):
     pass
 else:
     os.mkdir(temp_dest)
+    FILE_ATTRIBUTE_HIDDEN = 0x02
+    ret = ctypes.windll.kernel32.SetFileAttributesW(temp_dest, FILE_ATTRIBUTE_HIDDEN)
 
 try:
     video = YouTube(video_link)
