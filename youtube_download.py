@@ -9,7 +9,7 @@ def rename(dest, video_title, previous_format, new_format):
     os.rename(old_path, new_path)
     return [old_path, new_path]
 
-destination = "C:/Users/DuenoHfao/Desktop/Programming/Download Audio/Downloaded/"
+destination = "C:/Users/DuenoHfao/Music/"
 video_link = "https://youtu.be/A48bcNyi1VM?list=LRSREwUjOBueyvAnC-DAYhzVvHTeW9ADf_VEx"
 temp_dest = "C:/Users/DuenoHfao/Desktop/Programming/Download Audio/Temp/"
 
