@@ -4,7 +4,7 @@ from delete_temp import *
 import ctypes
 import os
 
-temp_dest = "C:/Users/DuenoHfao/Desktop/Programming/Download YouTube/Temp/"
+temp_dest = "./Temp/"
 clear_temp()
 
 def check_folders(destination):
