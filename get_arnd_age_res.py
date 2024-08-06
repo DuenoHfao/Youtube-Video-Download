@@ -4,8 +4,8 @@ import pathlib
 import os
 
 
-destination = "C:/Users/DuenoHfao/Music/"
-video_link = "https://youtu.be/O01mjjcxNhE"
+destination = ""
+video_link = ""
 
 try:
     with YoutubeDL() as ydl:
